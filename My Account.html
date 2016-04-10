@@ -1,0 +1,180 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<link rel="icon" href="Pictures\icon.png">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>My Account - Northern Fame Bookstore</title>
+<link rel="stylesheet" href="foundation.min.css">
+</head>
+<body>
+ 
+  
+		<script type="text/javascript">
+		function subtractQty(){
+			if(document.getElementById("qty").value - 1 < 0)
+				return;
+			else
+				 document.getElementById("qty").value--;
+		}
+		
+		function subtractQty1(){
+			if(document.getElementById("qty1").value - 1 < 0)
+				return;
+			else
+				 document.getElementById("qty1").value--;
+		}
+		
+				function subtractQty2(){
+			if(document.getElementById("qty2").value - 1 < 0)
+				return;
+			else
+				 document.getElementById("qty2").value--;
+		}
+
+      function activateTab(pageId) {
+          var tabCtrl = document.getElementById('tabCtrl');
+          var pageToActivate = document.getElementById(pageId);
+          for (var i = 0; i < tabCtrl.childNodes.length; i++) {
+              var node = tabCtrl.childNodes[i];
+              if (node.nodeType == 1) { /* Element */
+                  node.style.display = (node == pageToActivate) ? 'block' : 'none';
+              }
+          }
+      }
+		
+		</script>
+		 
+<div class="top-bar">
+<div class="top-bar-left">
+<ul class="menu">
+<li class="menu-text">Northern Fame Bookstore<br>Sale System Website</li>
+<li><a href="index.html">Home</a></li>
+<li><a href="About Us.html">About Us</a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+<li><a href="Enquiry.html">Enquiry</a></li>
+<li><a href="Best Selling.html">Best Selling</a></li>
+</ul>
+</div>
+<div class="top-bar">
+<div class="top-bar-right">
+<ul class="menu">
+<li><a href="Customer Registration.html">Customer's Account Registration</a></li>
+<li><a href="Login.html">Login</a></li>
+<li><a href="My Account.html">My Account</a></li>
+<li><a href="CartCheckout.html">Cart/Check-out</a></li>
+<li><a href="Logout.html">Logout</a></li>
+</ul>
+</div>
+</div>
+<div class="orbit" role="region" aria-label="Books Banner" data-orbit>
+  <ul class="orbit-container">
+    <li class="is-active orbit-slide">
+      <img class="orbit-image" src="Pictures\9.jpg" alt="Slide1">
+    </li>
+  </ul>
+</div>
+
+<h2>&nbsp;&nbsp;&nbsp; My Account</h2>
+<p align="center">You may track all your previous orders made here, status of each orders will be displayed. All your orders made will be saved as well, a history of your orders will help you keep track of what you have purchased previously.</p>
+<hr>
+
+<div class="top-bar">
+<div class="top-bar-left">
+<ul class="menu">
+<li><a href="javascript:activateTab('TrackOrder')">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tracking Order</a></li>
+<li><a href="javascript:activateTab('OrderHistory')">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Order History</a></li>
+</ul>
+
+
+<div id="tabCtrl">
+<div id="TrackOrder" style="display: block;"><h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tracking Order</h4>
+
+<form id="cartform">
+<table align="center">
+<tr>
+      <td style="width: 230px" align="center"><b>Latest/Current Order:</b><br><b>Remove:</b><input type="checkbox" style="width: 39px"></td>
+      <td style="width: 412px"><b>Order ID:</b> <a href="CartCheckout.html">OID00456 </a><br> <b>Total Amount of Price:</b> RM355.91</td>
+      <td colspan="3"><b>Status:</b> Processing... <b>[4th of April, 2016]</b></td>
+</tr>
+
+<tr>
+      <td style="width: 230px" align="center"><b>Latest/Current Order:</b><br><b>Remove:</b><input type="checkbox" style="width: 39px"></td>
+      <td style="width: 412px"><b>Order ID:</b> <a href="#">OID00455 </a><br> <b>Total Amount of Price:</b> RM59.99</td>
+      <td colspan="3"><b>Status:</b> Delivering... <b>[1st of April, 2016]</b></td>
+</tr>
+
+</table>
+</form>
+</div>
+
+
+<div id="OrderHistory" style="display: none;"><h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Order History</h4>
+
+<form id="cartform1">
+<table align="center">
+<tr>
+      <td style="width: 230px" align="center"><b>1.)</b><b> Remove:</b><input type="checkbox" style="width: 39px"></td>
+      <td style="width: 412px"><b>Order ID:</b> OID00455<br> <b>Total Amount of Price:</b> RM59.99</td>
+      <td colspan="3"><b>Status:</b> Sent out <b>[29th of March, 2016]</b></td>
+</tr>
+
+<tr>
+      <td style="width: 230px" align="center"><b>2.)</b><b> Remove:</b><input type="checkbox" style="width: 39px"></td>
+      <td style="width: 412px"><b>Order ID:</b> OID00454<br> <b>Total Amount of Price:</b> RM125.98</td>
+      <td colspan="3"><b>Status:</b> Delivered <b>[23rd of March, 2016]</b></td>
+</tr>
+<tr>
+      <td style="width: 230px" align="center"><b>3.)</b><b> Remove:</b><input type="checkbox" style="width: 39px"></td>
+      <td style="width: 412px"><b>Order ID:</b> OID00453<br> <b>Total Amount of Price:</b> RM234.91</td>
+      <td colspan="3"><b>Status:</b> Delivered <b>[11th of March, 2016]</b></td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div align="center"><a href="#" class="button">OK</a></div>
+<hr>
+
+<br>
+
+<br>
+
+<div class="callout large secondary">
+<div class="row">
+<div class="large-4 columns">
+<h5><strong>Northern Fame Bookstore (NFB)</strong></h5>
+<h6><p>NFB sees itself to be the leader in providing A-class services and products to its customers through the use of technology, in this market. Northern Fame Bookstore (NFB) is best known for being the favourite Malaysian local retail and distributor for all kinds of books. They do serve walk-in customers as well in their shop located at Bukit Jalil, Malaysia.
+<br><em>Nothern Fame Bookstore © Copyright 2016 Jason Khor</em></p></h6>
+</div>
+
+<div class="large-3 large-offset-2 columns">
+<ul class="menu vertical">
+<li class="menu-text">NFB Sale System Website</li>
+<li><a href="index.html">Home</a></li>
+<li><a href="About Us.html">About Us</a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+<li><a href="Enquiry.html">Enquiry</a></li>
+<li><a href="Best Selling.html">Best Selling</a></li>
+</ul>
+</div>
+<div class="large-3 columns">
+<ul class="menu vertical">
+<li><a href="Customer Registration.html">Customer's Account Registration</a></li>
+<li><a href="Login.html">Login</a></li>
+<li><a href="My Account.html">My Account</a></li>
+<li><a href="Logout.html">Logout</a></li>
+</ul>
+</div>
+</div>
+</div>
+<script src="jquery-2.1.4.min.js"></script>
+<script src="foundation.js"></script>
+<script>
+      $(document).foundation();
+    </script>
+</div>
+</body>
+</html>

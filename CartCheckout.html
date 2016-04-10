@@ -1,0 +1,166 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<link rel="icon" href="Pictures\icon.png">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Cart/Check-out - Northern Fame Bookstore</title>
+<link rel="stylesheet" href="foundation.min.css">
+</head>
+<body>
+ 
+  
+		<script type="text/javascript">
+		function subtractQty(){
+			if(document.getElementById("qty").value - 1 < 0)
+				return;
+			else
+				 document.getElementById("qty").value--;
+		}
+		
+		function subtractQty1(){
+			if(document.getElementById("qty1").value - 1 < 0)
+				return;
+			else
+				 document.getElementById("qty1").value--;
+		}
+		
+				function subtractQty2(){
+			if(document.getElementById("qty2").value - 1 < 0)
+				return;
+			else
+				 document.getElementById("qty2").value--;
+		}
+
+		
+		</script>
+		 
+<div class="top-bar">
+<div class="top-bar-left">
+<ul class="menu">
+<li class="menu-text">Northern Fame Bookstore<br>Sale System Website</li>
+<li><a href="index.html">Home</a></li>
+<li><a href="About Us.html">About Us</a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+<li><a href="Enquiry.html">Enquiry</a></li>
+<li><a href="Best Selling.html">Best Selling</a></li>
+</ul>
+</div>
+<div class="top-bar">
+<div class="top-bar-right">
+<ul class="menu">
+<li><a href="Customer Registration.html">Customer's Account Registration</a></li>
+<li><a href="Login.html">Login</a></li>
+<li><a href="My Account.html">My Account</a></li>
+<li><a href="CartCheckout.html">Cart/Check-out</a></li>
+<li><a href="Logout.html">Logout</a></li>
+</ul>
+</div>
+</div>
+<div class="orbit" role="region" aria-label="Books Banner" data-orbit>
+  <ul class="orbit-container">
+    <li class="is-active orbit-slide">
+      <img class="orbit-image" src="Pictures\7.jpg" alt="Slide1">
+    </li>
+  </ul>
+</div>
+
+<div class="row column text-center">
+<br>
+<h2 align="center">Your Cart</h2>
+<p>You proceed to payment if there are no problems with your order, click Go Back to return to the home page to shop for more should you wish to.</p>
+<hr>
+</div>
+
+<div align="center">
+<form id="cartform">
+<table>
+<tr>
+      <td style="width: 230px" align="center"><a href="(8) How Google Works.html"><img class="thumbnail" src="Books Pictures\How Google Works(100x100).jpg"></a><br><b>Remove:</b><input type="checkbox" style="width: 39px"></td>
+      <td style="width: 412px"><b>Book:</b> <a href="(8) How Google Works.html">How Google Works </a><br> <b>Product ID:</b> B0008</td>
+      <td colspan="3"><b>Unit Price:</b> RM59.99 <br><br><b>Quantity:</b>
+	  <form name="f1">
+			<input type='text' name='qty' id='qty' readonly style="width: 420px" value="3">
+			<input type='button' name='add' onclick='javascript: document.getElementById("qty").value++;' value='+'/>
+			<input type='button' name='subtract' onclick='javascript: subtractQty();' value='-'/>
+		</form><br><br>
+		<b>Total Price:</b> RM179.97</td>
+</tr>
+<tr>
+      <td style="width: 230px" align="center" bgcolor="#FFFFFF"><a href="(5) The Martian.html"><img class="thumbnail" src="Books Pictures\The Martian(100x100).jpg"></a><br><b>Remove:</b><input type="checkbox" style="width: 39px"></td>
+      <td style="width: 412px" bgcolor="#FFFFFF"><b>Book:</b> <a href="(5) The Martian.html">The Martian </a><br> <b>Product ID:</b> B0005</td>
+      <td colspan="3" bgcolor="#FFFFFF"><br><b>Unit Price:</b> RM45.99 <br><br><b>Quantity:</b>
+	  <form name="f1">
+			<input type='text' name='qty1' id='qty1' readonly style="width: 420px" value="2">
+			<input type='button' name='add' onclick='javascript: document.getElementById("qty1").value++;' value='+'/>
+			<input type='button' name='subtract' onclick='javascript: subtractQty1();' value='-'/>
+		</form><br><br>
+		<b>Total Price:</b> RM91.98</td>
+</tr>
+<tr>
+      <td style="width: 230px" align="center"><a href="(2) The Great Gatsby.html"><img class="thumbnail" src="Books Pictures\The Great Gatsby(100x100).png"></a><br><b>Remove:</b><input type="checkbox" style="width: 39px"></td>
+      <td style="width: 412px"><b>Book:</b> <a href="(2) The Great Gatsby.html">The Great Gatsby </a><br> <b>Product ID:</b> B0002</td>
+      <td colspan="3"><b><br>Unit Price:</b> RM20.99 <br><br><b>Quantity:</b>
+	  <form name="f1">
+			<input type='text' name='qty2' id='qty2' readonly style="width: 420px" value="4">
+			<input type='button' name='add' onclick='javascript: document.getElementById("qty2").value++;' value='+'/>
+			<input type='button' name='subtract' onclick='javascript: subtractQty2();' value='-'/>
+		</form><br><br>
+		<b>Total Price:</b> RM83.96</td>
+</tr>
+
+</table>
+
+<tr><b>Total Amount of Price:</b> RM355.91</tr><br>
+<tr><b>Order ID:</b> OID00456</tr>
+<br><br>
+
+</form>
+
+<div align="center"><a href="Credit Card.html" class="button">Proceed to payment</a>
+      	<a href="index.html" class="button">Go Back</a></div>
+
+</div>
+
+<hr>
+
+<br>
+
+<br>
+
+<div class="callout large secondary">
+<div class="row">
+<div class="large-4 columns">
+<h5><strong>Northern Fame Bookstore (NFB)</strong></h5>
+<h6><p>NFB sees itself to be the leader in providing A-class services and products to its customers through the use of technology, in this market. Northern Fame Bookstore (NFB) is best known for being the favourite Malaysian local retail and distributor for all kinds of books. They do serve walk-in customers as well in their shop located at Bukit Jalil, Malaysia.
+<br><em>Nothern Fame Bookstore © Copyright 2016 Jason Khor</em></p></h6>
+</div>
+
+<div class="large-3 large-offset-2 columns">
+<ul class="menu vertical">
+<li class="menu-text">NFB Sale System Website</li>
+<li><a href="index.html">Home</a></li>
+<li><a href="About Us.html">About Us</a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+<li><a href="Enquiry.html">Enquiry</a></li>
+<li><a href="Best Selling.html">Best Selling</a></li>
+</ul>
+</div>
+<div class="large-3 columns">
+<ul class="menu vertical">
+<li><a href="Customer Registration.html">Customer's Account Registration</a></li>
+<li><a href="Login.html">Login</a></li>
+<li><a href="My Account.html">My Account</a></li>
+<li><a href="Logout.html">Logout</a></li>
+</ul>
+</div>
+</div>
+</div>
+<script src="jquery-2.1.4.min.js"></script>
+<script src="foundation.js"></script>
+<script>
+      $(document).foundation();
+    </script>
+</div>
+</body>
+</html>
